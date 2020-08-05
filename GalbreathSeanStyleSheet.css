@@ -16,3 +16,23 @@ span.boldtext {
 span.italictext {
     font-style: italic;
 }
+table {
+    width:25%;
+    background-color: aquamarine;
+    border-collapse: collapse;
+}
+table, th, td {
+    border:1.5px solid black;
+}
+th {
+    font-size: 20px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+td {
+    font-size: 20px;
+    height: 50px;
+    text-align: left;
+    vertical-align: bottom;
+}
