@@ -36,6 +36,10 @@
       background-color: #4CAF50;
       color: white;
     }
+h2 {
+    text-align: left;
+    color: black;
+}
 </style>
 </head>
 
@@ -46,3 +50,52 @@
     <a href="table.html">Table</a>
     <a href="form.html">Form</a>
 </div>
+
+<Form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post">
+<h2>What is your name?</h2>
+    <label for="fname">First Name: </label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last Name: </label><br>
+    <input type="text" id="lname" name="lname">
+<br>
+<br>
+
+<h2>What is your gender?</h2>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="male">Female</label><br>
+    <input type="radio" id="noAnswer" name="gender" value="noAnswer">
+    <label for="noAnswer">No Answer</label><br>
+<br>
+<br>
+
+<h2>Why are you trying keto?</h2>
+    <label for="reasons">Choose your reason:</label>
+    <select id="reasons" name="reasons">
+        <option value="toEatBetter">To Eat Better</option>
+        <option value="toLoseWeight">To Lose Weight</option>
+        <option value="toIncreseMyOverallHealth">To Increase my Overall Health</option>
+        <option value="allOfTheAbove">All of the Above</option>
+    </select>
+<br>
+<br>
+
+<h2>In detail, why are you trying keto now?</h2>
+    <textarea name="message" rows="10" cols="50"></textarea>
+<br>
+<br>
+
+<h2>Are you ready for keto?</h2>
+    <input type="checkbox" id="rule1" name="rule1" value="detoxTime">
+    <label for="rule1">Will you detox your body from carbs and sugars?</label><br>
+    <input type="checkbox" id="rule2" name="rule2" value="cleanCabinets">
+    <label for="rule2">Will you remove non-keto foods from your cabinets?</label><br>
+    <input type="checkbox" id="rule3" name="rule3" value="strictKeto">
+    <label for="rule3">Will you be strict keto for at least a month?</label><br>
+<br>
+<br>
+
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</Form>
