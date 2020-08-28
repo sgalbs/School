@@ -47,7 +47,11 @@
     <a href="form.html">Form</a>
 </div>
 
-<h1>Please watch my welcome video!<br>If the video will not load then listen to the audio.</h1>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+  Click me for the date and time.</button>"
+<p id="demo"></p>
+
+<h1 onmouseover="style.color='yellow'" onmouseout="style.color='darkslateblue'">Please watch my welcome video!<br>If the video will not load then listen to the audio.</h1>
 <video width="600" height="400" controls>
   <source src="img/Welcom_video.mp4" type="video/mp4">
   <source src="img/Welcom_video.mp4" type="video/ogg">
@@ -59,6 +63,19 @@
   <source src="img/Welcom_Audio.wav" type="audio/wav">
   <source src="img/Welcom_Audio.wav" type="audio/mpeg">
 </audio>
+
+<div onmouseover="mOver(this)"
+onmouseout="mOut(this)"
+style="background-color: crimson;width: 300px; height: 40px;padding: 40px;">Want to see a secret?<br> mouse over me to find out</div>
+
+<Script>
+  function mOver(obj) {
+    obj.innerHTML = "Keto is a change of lifestyle not a crash diet!"
+  }
+  function mOut(obj) {
+    obj.innerHTML = "Want to see a secret? mouse over me to find out"
+  }
+</Script>
 
 <h1>What is the keto diet?</h1>
 <a href="https://www.healthline.com/nutrition/ketogenic-diet-101#what-it-is">
