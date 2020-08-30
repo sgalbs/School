@@ -10,3 +10,8 @@ h2, h3 {
     text-align: center;
     color: gold;
 }
+P {
+    text-indent: .5cm;
+    font-size: medium;
+    color: lawngreen; 
+}
