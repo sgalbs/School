@@ -9,37 +9,37 @@
 <link rel="stylesheet" type="text/css" href="GalbreathSeanStyleSheet2.css">
 <style>
     .topnav {
-      overflow: hidden;
-      background-color:burlywood;
-    }
+    overflow: hidden;
+    background-color:burlywood;
+  }
     
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
     
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
     
-    .topnav a.active {
-      background-color: goldenrod;
-      color: white;
-    }
+  .topnav a.active {
+    background-color: goldenrod;
+    color: white;
+  }
 </style>
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="GalbreathSeanHomePage.html">Home</a>
-        <a href="Tables.html">Tables</a>
-        <a href="Citations.html">Citations</a>
-    </div>
+  <div class="topnav">
+    <a class="active" href="GalbreathSeanHomePage.html">Home</a>
+    <a href="Tables.html">Tables & Form</a>
+    <a href="Citations.html">Citations</a>
+  </div>
 
 <h2>Salary Chart</h2>
 <p>The below chart shows the comparison of the average salaries of Information Security analyst job based on the industries they work in.</p>
@@ -47,7 +47,7 @@
 <caption style="font-weight: bold; font-size: 25px;">Job Salary Comparison</caption>
   <tr>
     <th>Job Title</th>
-    <th>Salary in USD</th>
+    <th>Salary (in USD)</th>
   </tr>
   <tr>
     <td>Finance and Insurance</td>
@@ -71,5 +71,54 @@
   </tr>
 </table>
 
+<Form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post">
+<h2 style="font-size: 45px;">Getting to know You</h2>
+<h1>What is your name?</h1>
+    <label for="fname">First Name: </label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last Name: </label><br>
+    <input type="text" id="lname" name="lname">
+<br>
+  
+<h1>Do you have a degree?</h1>
+  <input type="radio" id="Yes" name="degree" value="Yes">
+  <label for="Yes">Yes</label><br>
+  <input type="radio" id="No" name="degree" value="No">
+  <label for="No">No</label><br>
+  <input type="radio" id="workOn" name="degree" value="workOn">
+  <label for="workOn">I am working on it</label><br>
+<br>
+
+<h1>What College did you attend? </h1>
+    <label for="college">College name: </label> <input type="text" id="college" name="college">
+<br>
+  
+<h1>Do you have proir experience?</h1>
+  <label for="experience">Choose your answer:</label>
+  <select id="experience" name="experience">
+    <option value="yes1to5">Yes, 1 to 5 years</option>
+    <option value="yes5to10">Yes, 5 to 10 years</option>
+    <option value="yes10">Yes, 10 or more years</option>
+    <option value="onlyCollege">Just graduated college</option>
+    <option value="none" selected>None</option>
+  </select>
+<br>
+  
+<h1>In detail, what experience do you have?</h1>
+  <textarea name="message" rows="10" cols="50"></textarea>
+<br>
+  
+<h1>Are you ready for keto?</h1>
+  <input type="checkbox" id="rule1" name="rule1" value="detoxTime">
+  <label for="rule1">Will you detox your body from carbs and sugars?</label><br>
+  <input type="checkbox" id="rule2" name="rule2" value="cleanCabinets">
+  <label for="rule2">Will you remove non-keto foods from your cabinets?</label><br>
+  <input type="checkbox" id="rule3" name="rule3" value="strictKeto">
+  <label for="rule3">Will you be strict keto for at least a month?</label><br>
+<br>
+
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</Form>
 
 </body>
